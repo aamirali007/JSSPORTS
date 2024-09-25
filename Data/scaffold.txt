@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "Server=DESKTOP-H0EFBJV\AAMIRALI;Database=JSSPORTS;User Id=sports;Password=abc123;" Microsoft.EntityFrameworkCore.SqlServer --context JSDBContext --context-dir Data --output-dir Entities --force
