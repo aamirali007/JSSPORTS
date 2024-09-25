@@ -11,7 +11,7 @@ using System.Text;
 using static SportsOrderApp.Repositories.IRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.WebHost.UseUrls("http://*:8080");
 // Add services to the container.
 // Register JSDBContext with dependency injection
 builder.Services.AddDbContext<JSDBContext>(options =>
