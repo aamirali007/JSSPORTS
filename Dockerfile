@@ -27,4 +27,5 @@ COPY --from=build /out .
 EXPOSE 80
 
 # Start the Web API
-ENTRYPOINT ["dotnet", "SportsOrderApp.dll"]
+ENTRYPOINT ["dotnet", "SportsOrderApp.dll", "--urls", "http://0.0.0.0:80"]
+
